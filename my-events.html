@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage your Campus Event Hub registrations.">
+    <title>My Events | Campus Event Hub</title>
+    <link rel="stylesheet" href="css/my-events.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html">Campus Event Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a class="active" href="my-events.html" aria-current="page">My Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro" aria-labelledby="page-title">
+            <p class="eyebrow">YOUR CAMPUS CALENDAR</p>
+            <h1 id="page-title">My Events</h1>
+            <p>Keep track of the experiences you have chosen to be part of.</p>
+        </section>
+
+        <section class="registrations" aria-labelledby="registrations-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">REGISTERED EVENTS</p>
+                    <h2 id="registrations-title">Your upcoming plans</h2>
+                </div>
+                <span id="registration-count" class="registration-count" aria-live="polite"></span>
+            </div>
+            <div id="event-list" class="event-list" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Event Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/my-events.js"></script>
+</body>
+</html>
