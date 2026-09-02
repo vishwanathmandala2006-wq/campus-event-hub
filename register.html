@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Campus Event Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Campus Event Hub</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="registration-page">
+        <section class="registration-shell">
+            <div class="registration-header">
+                <p class="section-tag">EVENT REGISTRATION</p>
+                <h1>Reserve Your Spot</h1>
+                <p>
+                    Register for the campus event you want to attend and keep your details saved for quick access later.
+                </p>
+            </div>
+
+            <form id="registrationForm" class="registration-form" novalidate>
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="studentName">Student Name</label>
+                        <input id="studentName" name="name" type="text" placeholder="Enter your full name" required>
+                        <small class="error-message" data-error-for="name"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="yourname@example.com" required>
+                        <small class="error-message" data-error-for="email"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" name="phone" type="tel" placeholder="9876543210" required>
+                        <small class="error-message" data-error-for="phone"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select department</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Electronics and Communication">Electronics and Communication</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                            <option value="Business Administration">Business Administration</option>
+                        </select>
+                        <small class="error-message" data-error-for="department"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="yearOfStudy">Year of Study</label>
+                        <select id="yearOfStudy" name="year" required>
+                            <option value="">Select year</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                            <option value="Postgraduate">Postgraduate</option>
+                        </select>
+                        <small class="error-message" data-error-for="year"></small>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="selectedEvent">Selected Event</label>
+                        <select id="selectedEvent" name="event" required>
+                            <option value="">Choose an event</option>
+                        </select>
+                        <small class="error-message" data-error-for="event"></small>
+                    </div>
+                </div>
+
+                <button type="submit" class="register-button">Register</button>
+                <p id="formMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/registration.js"></script>
+</body>
+</html>
