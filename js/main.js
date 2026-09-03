@@ -106,7 +106,7 @@ function displayEvents() {
                         ${event.venue}
                     </span>
 
-                    <a href="#" class="event-button">
+                    <a href="event-details.html?id=${event.id}" class="event-button">
                         View Details →
                     </a>
 
